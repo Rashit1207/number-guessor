@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script async src="script.js"></script>
+  <style>
+    body,
+    * {
+      font-family: Heltvetica;
+    }
+
+    input {
+      border-radius: 4px;
+      padding: 6px;
+      border: 1px solid #000;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: skyblue;
+    }
+
+    button {
+      background-color: transparent;
+      padding: 6px 12px;
+      border-radius: 4PX;
+      border: 1px solid #888;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Number Guesser</h1>
+    <p>Guess a number between <span id="min">0</span> and <span id="max">10</span></p>
+    <div class="wrap">
+      <input id="number" type="number" placeholder="Enter your guess">
+      <button id="btn">SUBMIT</button>
+    </div>
+    <p id="text"></p>
+  </div>
+</body>
+
+</html>
